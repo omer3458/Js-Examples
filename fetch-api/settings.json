@@ -1,0 +1,8 @@
+{
+    "userName":"omer",
+    "password":1234,
+    "ip":"127.0.0.1",
+    "serverName":"kodluyoruz",
+    "isActive":true,
+    "IDs":[1,2,3,4,5]
+}
