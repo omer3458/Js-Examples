@@ -9,3 +9,13 @@ fetch("https://jsonplaceholder.typicode.com/todos/1/comments")
       data.appendChild(liDom);
     })
   );
+
+const selfData = document.getElementById("selfdata");
+fetch("settings.json")
+  .then((response) => response.json())
+  .then((responseJson) => {
+    console.log(responseJson);
+    let liDom = document.createElement("div");
+    liDom.innerHTML = responseJson.userName;
+    selfData.appendChild(liDom);
+  });
